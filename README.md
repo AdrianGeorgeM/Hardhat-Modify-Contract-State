@@ -1,13 +1,9 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Set up a simple Hardhat project structure, add a contract with a state variable
+and a function to modify it. And then write a quick test to make sure the
+function modifies the state variable as expected.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Extra Challenges: Create a new type string state variable and modify it Change
+the constructor argument Add a new test Create a scripts directory, deploy your
+contract and change the contract state
