@@ -1,5 +1,5 @@
 # Sample Hardhat Project
-
+Modifying State Variables BY:
 Set up a simple Hardhat project structure, add a contract with a state variable
 and a function to modify it. And then write a quick test to make sure the
 function modifies the state variable as expected.
