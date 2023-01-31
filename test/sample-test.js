@@ -6,18 +6,18 @@ const { expect, assert } = require("chai");
 describe("TestModifyVariable", function () {
 	it("should change x to 1337", async function () {
 		// this line creates an ethers ContractFactory abstraction: https://docs.ethers.org/v5/api/contract/contract-factory/
-		const ModifyVariable = await ethers.getContractFactory("ModifyVariable");
+		const ModifyVariable = await ethers.getContractFactory("ModifyVariable"); // this is the name of the contract in the .sol file
 
 		// we then use the ContractFactory object to deploy an instance of the contract
-		const contract = await ModifyVariable.deploy(10);
+		const contract = await ModifyVariable.deploy(10); // 10 is the initial value of x
 
 		// wait for contract to be deployed and validated!
-		await contract.deployed();
+		await contract.deployed(); // this is a promise
 
 		// modify x from 10 to 1337 via this function!
 		await contract.modifyToLeet();
 		// getter for state variable x
-		const newX = await contract.x();
-		assert.equal(newX.toNumber(), 1337);
+		const newX = await contract.x(); // this is a promise
+		assert.equal(newX.toNumber(), 1337); // this is a promise
 	});
 });
